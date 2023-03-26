@@ -15,7 +15,6 @@ export type Offer = {
     reviews?: Reviews;
   };
 
-  export type Offers = Offer [];
 
   export type RoomFillingInfo = {
     roomFilling: string[];
@@ -36,3 +35,5 @@ export type Offer = {
       userText: string;
       postDate: string;
   };
+
+  export type Offers = Offer [];
