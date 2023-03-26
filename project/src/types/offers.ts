@@ -6,34 +6,8 @@ export type Offer = {
     price: number;
     description: string;
     rating: string;
-    ratingValue: number;
+    ratingValue?: number;
     type: string;
-    bedroomsNumber: number;
-    aultsMax: number;
-    roomFillingInfo?: RoomFillingInfo;
-    host?: Host;
-    reviews?: Reviews;
   };
 
-
-  export type RoomFillingInfo = {
-    roomFilling: string[];
-  };
-
-  export type Host = {
-
-    hostAvatar: string;
-    hostName: string
-    hostStatus: string;
-    descriptionText: string;
-  };
-  export type Reviews = {
-
-      reviewsAmount: number;
-      userAvatar: string;
-      userName: string;
-      userText: string;
-      postDate: string;
-  };
-
-  export type Offers = Offer [];
+  export type Offers = Offer[];

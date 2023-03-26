@@ -1,23 +1,25 @@
+import { Link } from 'react-router-dom';
+import { Offer } from '../../types/offers';
+
+
 type CityCardProps = {
-  isPremium?: boolean;
-  mainImage: string;
-  price: number;
-  description: string;
-  type: string;
+  offer: Offer;
+  onMouseOverHandler: () => void;
 };
 
-function CityCard({isPremium, mainImage, price, description, type}: CityCardProps): JSX.Element {
+function CityCard({offer, onMouseOverHandler}: CityCardProps): JSX.Element {
+  const {id, image, isPremium, price, description, rating, ratingValue, type} = offer;
   return (
-    <article className="cities__card place-card">
+    <article id={id} className="cities__card place-card" onMouseOver={onMouseOverHandler}>
       {isPremium && (
         <div className="place-card__mark">
           <span>Premium</span>
         </div>
       )}
       <div className="cities__image-wrapper place-card__image-wrapper">
-        <a href="#">
-          <img className="place-card__image" src={mainImage} width="260" height="200" alt="Place image" />
-        </a>
+        <Link to={`/offer/${id}`}>
+          <img className="place-card__image" src={image} width="260" height="200" alt="Place image" />
+        </Link>
       </div>
       <div className="place-card__info">
         <div className="place-card__price-wrapper">
@@ -28,12 +30,13 @@ function CityCard({isPremium, mainImage, price, description, type}: CityCardProp
         </div>
         <div className="place-card__rating rating">
           <div className="place-card__stars rating__stars">
-            <span style={{width: '80%'}}></span>
+            <span style={{width: `${rating}`}}></span>
             <span className="visually-hidden">Rating</span>
           </div>
+          <span className="property__rating-value rating__value">{ratingValue}</span>
         </div>
         <h2 className="place-card__name">
-          <a href="#">{description}</a>
+          <Link to={`/offer/${id}`}>{description}</Link>
         </h2>
         <p className="place-card__type">{type}</p>
       </div>
