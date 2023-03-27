@@ -1,5 +1,5 @@
-import Header from "../../components/header/header";
-import CityBar from "../../components/city-bar/city-bar";
+import Header from '../../components/header/header';
+import CityBar from '../../components/city-bar/city-bar';
 
 function MainPageEmpty (): JSX.Element {
   return (
@@ -15,7 +15,7 @@ function MainPageEmpty (): JSX.Element {
         <h1 className="visually-hidden">Cities</h1>
         <div className="tabs">
 
-      <CityBar/>
+          <CityBar/>
 
         </div>
         <div className="cities">

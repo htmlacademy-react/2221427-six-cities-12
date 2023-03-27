@@ -10,6 +10,27 @@ export const offers: Offers = [
     rating: '80%',
     ratingValue: 4.8,
     type: 'Apartment',
+
+    roomFeatures: {
+      bedroomsNumber: 3,
+      aultsMax: 4,
+      roomFilling: ['Wi-Fi', 'Washing machine', 'Heating', 'Coffee machine', 'Baby seat', 'Kitchen', 'Dishwasher', 'Cabel TV', 'Fridge'],
+    },
+    host: {
+      hostAvatar: '../img/avatar-angelina.svg',
+      hostName: 'Angelina',
+      hostStatus: 'Pro',
+      descriptionTextFirst: 'An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.',
+      descriptionTextSecond: 'Trololo! This is REACCTTTt!!!',
+    },
+
+    reviews: {
+      reviewsAmount: 1,
+      userAvatar: '../img/avatar-max.svg',
+      userName: 'Vasiliy Terkin',
+      userText: 'Nice apattments! Recommended.',
+      postDate: 'Septemer 2022',
+    },
   },
 
   {
@@ -21,6 +42,27 @@ export const offers: Offers = [
     rating: '50%',
     ratingValue: 2.5,
     type: 'Private Room',
+
+    roomFeatures: {
+      bedroomsNumber: 3,
+      aultsMax: 4,
+      roomFilling: ['Wi-Fi', 'Washing machine', 'Heating', 'Coffee machine', 'Baby seat', 'Kitchen', 'Dishwasher', 'Cabel TV', 'Fridge'],
+    },
+    host: {
+      hostAvatar: '../img/avatar-angelina.svg',
+      hostName: 'Angelina',
+      hostStatus: 'Pro',
+      descriptionTextFirst: 'An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.',
+      descriptionTextSecond: 'Trololo! This is REACCTTTt!!!',
+    },
+
+    reviews: {
+      reviewsAmount: 1,
+      userAvatar: '../img/avatar-max.svg',
+      userName: 'Vasiliy Terkin',
+      userText: 'Nice apattments! Recommended.',
+      postDate: 'Septemer 2022',
+    },
   },
 
   {
@@ -32,6 +74,27 @@ export const offers: Offers = [
     rating: '100%',
     ratingValue: 5,
     type: 'Penthouse',
+
+    roomFeatures: {
+      bedroomsNumber: 3,
+      aultsMax: 4,
+      roomFilling: ['Wi-Fi', 'Washing machine', 'Heating', 'Coffee machine', 'Baby seat', 'Kitchen', 'Dishwasher', 'Cabel TV', 'Fridge'],
+    },
+    host: {
+      hostAvatar: '../img/avatar-angelina.svg',
+      hostName: 'Angelina',
+      hostStatus: 'Pro',
+      descriptionTextFirst: 'An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.',
+      descriptionTextSecond: 'Trololo! This is REACCTTTt!!!',
+    },
+
+    reviews: {
+      reviewsAmount: 1,
+      userAvatar: '../img/avatar-max.svg',
+      userName: 'Vasiliy Terkin',
+      userText: 'Nice apattments! Recommended.',
+      postDate: 'Septemer 2022',
+    },
   },
 
   {
@@ -43,5 +106,26 @@ export const offers: Offers = [
     rating: '80%',
     ratingValue: 4.8,
     type: 'Apartment',
+
+    roomFeatures: {
+      bedroomsNumber: 3,
+      aultsMax: 4,
+      roomFilling: ['Wi-Fi', 'Washing machine', 'Heating', 'Coffee machine', 'Baby seat', 'Kitchen', 'Dishwasher', 'Cabel TV', 'Fridge'],
+    },
+    host: {
+      hostAvatar: '../img/avatar-angelina.svg',
+      hostName: 'Angelina',
+      hostStatus: 'Pro',
+      descriptionTextFirst: 'An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.',
+      descriptionTextSecond: 'Trololo! This is REACCTTTt!!!',
+    },
+
+    reviews: {
+      reviewsAmount: 1,
+      userAvatar: '../img/avatar-max.svg',
+      userName: 'Vasiliy Terkin',
+      userText: 'Nice apattments! Recommended.',
+      postDate: 'Septemer 2022',
+    },
   },
 ];

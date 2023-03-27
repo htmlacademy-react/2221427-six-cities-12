@@ -7,15 +7,15 @@ type OffersListType = {
   offers: Offers;
 };
 
-function OffersList({ offers }: OffersListType): JSX.Element {
+function OffersList({offers }: OffersListType): JSX.Element {
   const [activeId, setActiveId] = useState('0');
   return (
     <div className="cities__places-list places__list tabs__content" key={activeId}>
-      {offers.map((offer) => (
+      {offers.map((offers) => (
         <CityCard
-          key={`${offer.id}`}
-          offer={offer}
-          onMouseOverHandler={() => setActiveId(offer.id)}
+          key={`${offers.id}`}
+          offer={offers}
+          onMouseOverHandler={() => setActiveId(offers.id)}
         />
       ))}
     </div>

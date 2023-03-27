@@ -3,10 +3,11 @@ import { Offer } from '../../types/offers';
 import FavoritesCard from '../../components/favorites-card/favorites-card';
 
 type FavoritesPageProps = {
-  offers: Offer;
+  offers: Offer[];
 };
 
 function FavoritesPage ({offers}: FavoritesPageProps): JSX.Element {
+  const filteredOffers = offers.filter((offer) => offer.id);
   return (
     <div className="page">
       <div style={{display: 'none'}}>
@@ -30,9 +31,7 @@ function FavoritesPage ({offers}: FavoritesPageProps): JSX.Element {
                 </div>
                 <div className="favorites__places">
 
-                  <FavoritesCard offers={offers}/>
-
-                  <FavoritesCard offers={offers}/>
+                  {filteredOffers.map((offer) => <FavoritesCard offer={offer} key={offer.id} />)}
 
                 </div>
               </li>
@@ -47,7 +46,7 @@ function FavoritesPage ({offers}: FavoritesPageProps): JSX.Element {
                 </div>
                 <div className="favorites__places">
 
-                  <FavoritesCard offers={offers}/>
+                  {filteredOffers.map((offer) => <FavoritesCard offer={offer} key={offer.id} />)}
 
                 </div>
               </li>
